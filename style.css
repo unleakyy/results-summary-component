@@ -1,0 +1,174 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: "honken";
+}
+
+@font-face {
+    font-family: "honken";
+    src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+#template {
+    width: auto;
+    margin: 0px auto;
+}
+
+header {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px 30px;
+    color: hsl(224, 30%, 27%);
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+header p {
+    color: rgb(255, 255, 255, 0.5);
+}
+
+header>p {
+    margin: 10px 0px;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+header span {
+    color: white;
+}
+
+.score {
+    border-radius: 50%;
+    padding: 20px 40px;
+    text-align: center;
+    margin: 20px 0px;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+.score>span {
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+
+.score>p {
+    font-size: 0.7rem;
+}
+
+main {
+    margin: 35px 35px 0px;
+}
+
+main>p {
+    margin-bottom: 35px;
+    font-weight: 700;
+}
+
+.category {
+    display: flex;
+    border-radius: 10px;
+    margin: 20px 0px;
+    padding: 15px;
+    align-items: center;
+}
+
+.reaction {
+    background-color: hsl(0, 100%, 90%);
+    display: flex;
+    color: #ff5757;
+    font-weight: 700;
+}
+
+.category>p {
+    margin-left: auto;
+    /* font-weight: 700; */
+    color: black;
+}
+
+.category span {
+    margin-left: 15px;
+}
+
+.memory {
+    background-color: hsl(39, 100%, 90%);
+    color: #ffb01f;
+    font-weight: 700;
+}
+
+.verbal {
+    background-color: hsl(166, 100%, 90%);
+    color: #00bd91;
+    font-weight: 700;
+}
+
+.visual {
+    background-color: #c8c7ff;
+    color: #2421ca;
+    font-weight: 700;
+}
+
+button {
+    border-radius: 30px;
+    width: 100%;
+    padding: 18px;
+    margin: 10px 0px 30px;
+    background-color: #303b5a;
+    color: white;
+    border: none;
+}
+
+img {
+    width: 25px;
+}
+
+button:hover {
+    background-color: #4f5c80;
+    cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+    * {
+        font-size: 21px;
+    }
+
+    #template {
+        overflow: hidden;
+        display: flex;
+        width: 50%;
+        margin: 50px auto;
+        border-radius: 30px;
+        box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.45);
+    }
+
+    .score {
+        padding: 40px 60px;
+    }
+
+    header {
+        border-radius: 30px;
+        flex-basis: 50%;
+        position: relative;
+    }
+
+    #comment {
+        position: absolute;
+        padding: 0px 40px;
+        bottom: 10%;
+    }
+
+    header span {
+        font-size: 1.5rem;
+    }
+
+    main>p {
+        margin: 0px;
+    }
+
+    main {
+        flex-grow: 1;
+        margin-bottom: 0px;
+    }
+}

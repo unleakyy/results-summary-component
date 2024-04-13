@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="author" content="Kyle Yuan">
+    <meta name="description" content="A results summary component">
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    <title>A Results Summary Component Main</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./assets/images/favicon-32x32.png" type="image/png">
+</head>
+
+<body>
+    <section id="template">
+        <header>
+            <p>Your Result</p>
+            <section class="score">
+                <span>76</span>
+                <p>of 100</p>
+            </section>
+            <span>Great</span>
+            <p id="comment">You score higher than 65% of the people who have taken these tests.</p>
+        </header>
+        <main>
+            <p>Summary</p>
+            <section class="category-container">
+                <section class="category reaction">
+                    <figure>
+                        <img src="./assets/images/icon-reaction.svg">
+                    </figure>
+                    <span>Reaction</span>
+                    <p>80/100</p>
+                </section>
+                <section class="category memory">
+                    <figure>
+                        <img src="./assets/images/icon-memory.svg">
+                    </figure>
+                    <span>Memory</span>
+                    <p>92/100</p>
+                </section>
+                <section class="category verbal">
+                    <figure>
+                        <img src="./assets/images/icon-verbal.svg">
+                    </figure>
+                    <span>Verbal</span>
+                    <p>61/100</p>
+                </section>
+                <section class="category visual">
+                    <figure>
+                        <img src="./assets/images/icon-visual.svg">
+                    </figure>
+                    <span>Visual</span>
+                    <p>72/100</p>
+                </section>
+                <section class="button-container">
+                    <button onclick="notAvailable()">Continue</button>
+                </section>
+            </section>
+        </main>
+    </section>
+    <script src="code.js"></script>
+</body>
+
+</html>
